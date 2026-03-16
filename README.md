@@ -34,6 +34,8 @@ A mobile app that helps college students find and track parking on campus — bu
 - Node.js 18+
 - Expo CLI
 - iOS Simulator (Mac) or Android Emulator
+- Python3
+- 
 
 ### Installation
 
@@ -50,6 +52,14 @@ git clone https://github.com/devbycarlos/campus-parking-backend.git
 cd campus-parking-backend
 
 ```
+Virtual environment
+python3 -m venv venv
+source venv/bin/activate   # macOS / Linux
+venv\Scripts\activate    # Windows
+
+Install dependencies
+pip install flask flask-cors pytz
+
 
 ### Running the App
 
@@ -73,6 +83,7 @@ cd campus-parking-backend
 python3 api.py
 
 ```
+~Server starts on http://127.0.0.1:5001 (or your local network)
 
 ## Project Structure
 
